@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Suptech Environnement</title>
+
+<style>
+    html{
+    scroll-behavior: smooth;
+}
+::selection{
+    color:wheat ;
+    background-color:#69b573;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #eaf7ec ;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#0a87b1;
+    border-radius: 10px;
+}
+    /* Style tab links */
+.tablink {
+  background-color: #8abd91;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: 1.4em;
+  position: relative;
+  width: 25%;
+  height: 60px;
+  text-decoration: none;
+}
+img{
+  border: none;
+}
+ .tablink:hover {
+  background-color:  #8abd91;
+  text-decoration: none;
+  color: #eee;
+}
+.on{
+  background-color:  #0a87b1;
+  text-decoration: none;
+  color: #eee;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+
+
+.navbar {
+  
+  background-color: white; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:  #8abd91;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color:  #8abd91;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  border-bottom: 4px solid  #8abd91;
+  text-decoration: none;
+  
+}
+
+.subnav-content {
+  display: none;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1500;
+}
+
+.subnav-content a {
+  float: left;
+  color: #8abd91;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color:  #8abd91;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #8abd91;
+  text-align: center;
+  color: white;
+  font-size: medium;
+  font-weight: 200;
+  z-index: 999; /* Ensure footer is above other content */
+}
+
+.footer p {
+  margin: 0; 
+  
+}
+.footer a {
+  color: white;
+  font-size: 20px;
+  padding: 3px;
+}
+.footer a:hover {
+  color:#0a87b1;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    position:fixed; 
+    bottom: 0;
+  
+  }
+  .bordered-content1{
+    width: 100% !important;
+    margin-left: 0.5% !important;
+  }
+  .bordered-content{
+    margin-bottom: 20%;
+    
+  }
+  #col1{
+   
+    margin-bottom: 20%;
+  }
+  #col2{
+    margin-top: 25% ;
+  }
+ 
+ 
+}
+
+.bordered-content{
+    border: 2px solid #0a87b1; 
+  padding: 95px; 
+  
+  text-align: center ;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color:#E5E4E2;
+  color:#0a87b1;
+  border-radius: 25px;
+  font-size: 1.5em;
+  margin-top:2%;
+ height: 100%;
+ box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);
+}
+.bordered-content1{
+    border: 1px solid white;  
+    padding-bottom: 1.5%;
+    padding-top: 6%;
+  margin-left: 25%;
+  margin-right: 15%;
+  background-color:#8abd91;
+  color:white !important;
+  border-radius: 5px;
+  font-size: 1.4em;
+ width: 50%;
+  height: 50%;
+ 
+}
+.row a:hover {
+  color:#0a87b1 !important; 
+}
+
+
+</style>
+</head>
+<body style="background-color: #efefef;">
+<div id="firstheader">
+<a class="tablink text-center"  href="https://www.frdisi.ma/fr" ><img src="pictures/FRDSI logo[1](1).png" title="FRDSI" class="img-fluid" style="max-height: 3em;" alt="FRDSI"/> </a>
+<a class="tablink text-center on" href="Home.html"  >Suptech Environnement</a>
+<a class="tablink text-center" href="SuptechSante.html" >Suptech Santé</a>
+<a class="tablink text-center" href="Contact.html">Contat Us</a>
+</div>
+<!--_menu_-->
+
+<header>
+<div class="navbar" id="navbar">
+  <a><img src="pictures/Picture1.png" class="img-fluid logo" style="max-width: 5em;" alt="" /></a>
+  <a href="Home.html">Home</a>
+  <a href="Campuses.html">Campuses</a>
+  <div class="subnav">
+    <button class="subnavbtn" onclick="window.location.href='Formations.html'">Formations <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="#comoncore">Cycle Classes Préparatoires Intégrées </a>
+                                <a href="#licence">Cycle Licence </a>
+                                <a href="#master">Cycle Master</a>
+                                <a href="#engineering">Cycle Ingénieur</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Concours <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="#comoncore">Planning </a>
+                                <a href="Resultats.html">Résultats </a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Bourse <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="demandeBourse1.html">Demander une bourse</a>
+                                <a href="#licence">Suivre ma demande </a>
+    </div>
+    
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn" onclick="window.location.href='Documents.html'">Documents <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="#rib">RIB </a>
+                                <a href="#actecaut">Acte de cautionnement</a>
+                                <a href="#internat">Règlement internat</a>
+                                <a href="#regllicmas">Règlement Cycle licence et master</a>
+                                <a href="#reglprping">Règlement intérieur classes préparatoires et cycle d’ingénieur</a>
+    </div>
+    
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Pré-inscription<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="Pré-inscription.html">Effectuer une Pré-inscription</a>
+                                <a href="Suivi_Pré-inscription.html">Suivre mon Pré-inscription </a>
+    </div>
+    
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Français <i class="fa fa-caret-down"></i></button>
+    
+    
+  </div>
+
+ 
+</div>
+</header>
+
+<main>
+
+   
+    <p style="font-size: 2.5em; color: #0a87b1; text-align: center; 
+    margin-top: 3%;" ><strong>Résultats du Concours d'Accès aux Classes Préparatoires de l'Ecole SUPTECH SANTE</strong></p>
+<div class="bordered-content">
+    
+    <div class="row">
+        <div id="col1" class="col-md-6" >
+            <p style=" font-size: 1.5em; margin-top: -5%;">Session 1</p>
+            <div class="bordered-content1">
+            <a style=" color:white;  text-decoration: none; transition: color 0.3s;  " href="#">Site Mohammedia</a>
+            </div>
+            <br>
+            <div class="bordered-content1">
+                <a style=" color:white;  text-decoration: none; transition: color 0.3s; " href="#">Site Essaouira</a>
+                </div>
+        </div>
+        <div id="col2" class="col-md-6" >
+            <p style=" font-size: 1.5em; margin-top: -5%;">Session 2</p>
+            <div class="bordered-content1">
+                <a style=" color:white;  text-decoration: none; transition: color 0.3s; " href="#">Site Mohammedia</a>
+                </div>
+            <br>
+            <div class="bordered-content1">
+                <a style=" color:white;  text-decoration: none; transition: color 0.3s; " href="#">Site Essaouira</a>
+                </div>
+        </div>
+    </div>
+     
+</div>
+
+
+</main>
+
+
+
+<footer class="footer">
+  
+    <div class="container text-center" style="margin-top: 1%;">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa fa-whatsapp"></i></a>
+    
+      <p>SUPTECH ENVIRONNEMENT ©2024 Tous les droits sont réservés.</p>
+    </div>
+    
+  
+  </footer>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    
+  
+
+
+    
+    </script>
+</body>
+</html>
